@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AaronMorris_C971_Task1.Views.Dashboard">
+    <NavigationPage.TitleView>
+        <Label Text="Course Application" FontSize="Medium"></Label>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Terms" Text="View Terms" Clicked="Terms_Clicked"></ToolbarItem>
+        <!-- <ToolbarItem x:Name="Settings" Text="Settings" Order="Secondary" Clicked="Settings_Clicked"></ToolbarItem> -->
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to the Course Application Dashboard!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

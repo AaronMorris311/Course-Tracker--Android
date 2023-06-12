@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AaronMorris_C971_Task1.Views.AddAssessment"
+             Title="Add Assessment">
+
+    <StackLayout>
+        <Grid Padding="5" RowSpacing="1" ColumnSpacing="22" BackgroundColor="WhiteSmoke">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold">Assessment Title</Label>
+            <Entry x:Name="AssessName" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" Text="{Binding assessName}"></Entry>
+
+            <Label Grid.Row="1" Grid.Column="0" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold">Assessment Type</Label>
+            <Picker Grid.Row="1" Grid.Column="1" x:Name="AssessType" Title="Select Status">
+                <Picker.Items>
+                    <x:String>Objective</x:String>
+                    <x:String>Performance</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Grid.Row="2" Grid.Column="0" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold">Assessment Start Date</Label>
+            <DatePicker Grid.Row="2" Grid.Column="1" x:Name="AssessStartDate" ></DatePicker>
+
+            <Label Grid.Row="3" Grid.Column="0" FontSize="Medium" VerticalTextAlignment="Center" FontAttributes="Bold">Assessment End Date</Label>
+            <DatePicker Grid.Row="3" Grid.Column="1" x:Name="AssessEndDate" ></DatePicker>
+
+            <Button Grid.Row="4" Grid.ColumnSpan="2"  x:Name="Save" Text="Save Assessment" Clicked="Save_Clicked"></Button>
+            <Button Grid.Row="5" Grid.ColumnSpan="2" BackgroundColor="Red" x:Name="Cancel" Text="Cancel" Clicked="Cancel_Clicked"></Button>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>

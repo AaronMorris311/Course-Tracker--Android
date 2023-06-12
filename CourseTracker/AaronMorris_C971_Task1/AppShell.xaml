@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:AaronMorris_C971_Task1.Views;assembly=AaronMorris_C971_Task1"
+       x:Class="AaronMorris_C971_Task1.AppShell">
+
+
+    <FlyoutItem Title="Terms" x:Name="termsPageIcon"  Icon="icon_feed.png">
+        <ShellContent Route="TermsPage" ContentTemplate="{DataTemplate views:TermsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Courses" x:Name="coursesPageIcon" Icon="icon_courses.png">
+        <ShellContent Route="CoursesPage" ContentTemplate="{DataTemplate views:CoursesPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Add Courses" x:Name="addCoursesPageIcon" Icon="icon_about.png">
+        <ShellContent Route="AddCoursesPage" ContentTemplate="{DataTemplate views:AddCoursesPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Edit Courses" x:Name="editCoursesPageIcon" Icon="icon_feed.png">
+        <ShellContent Route="EditCoursesPage" ContentTemplate="{DataTemplate views:EditCoursesPage}" />
+    </FlyoutItem>
+
+
+</Shell>

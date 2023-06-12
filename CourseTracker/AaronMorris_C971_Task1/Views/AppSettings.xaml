@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AaronMorris_C971_Task1.Views.AppSettings"
+             Title="Application Settings">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="LoadSampleData" Text="Load Sample Data" WidthRequest="150" HorizontalOptions="Center" Clicked="LoadSampleData_Clicked" > </Button>
+            <Button x:Name="ClearSampleData" Text="Clear Sample Data" WidthRequest="150" HorizontalOptions="Center" Clicked="ClearSampleData_Clicked" > </Button> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
